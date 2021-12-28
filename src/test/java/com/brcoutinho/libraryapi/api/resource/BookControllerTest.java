@@ -34,7 +34,7 @@ public class BookControllerTest {
     @Test
     @DisplayName("Deve criar um livro com sucesso")
     public void createBookTest() throws Exception{
-        BookDTO bookDTO = BookDTO.builder().id(1L).author("Karl Marx").title("Manifesto do Partido Comunista").isbn("2331123").build();
+        BookDTO bookDTO = BookDTO.builder().id(1L).author("Karl Marx").title("Manifesto do Partido Comunista").isbn("888888").build();
 
         String json = new ObjectMapper().writeValueAsString(bookDTO);
 
